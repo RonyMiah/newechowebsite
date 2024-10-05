@@ -73,7 +73,7 @@ const config: Config = {
   			sm: 'calc(var(--radius) - 4px)'
   		},
 		screens: {
-        'sx': '550px', // Custom size for screens of 550px or larger
+        'sx': '310px', // Custom size for screens of 550px or larger
       },
   	}
   },

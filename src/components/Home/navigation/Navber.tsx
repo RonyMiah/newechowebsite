@@ -60,25 +60,27 @@ const Navber = () => {
   };
 
   return (
-    <>
+    <div className="fixed top-0 left-0  bg-white shadow-md z-50 w-full ">
       <nav>
-        <div className="container flex justify-between items-center ">
+        <div
+          className="lg:container md:container  flex justify-between items-center  "
+        >
           {/* Logo Section */}
           <div className="text-2xl flex items-center justify-center font-bold uppercase">
             <Image
               className="flex justify-center items-center"
               src={logo}
               alt="logo"
-              height={90}
-              width={90}
+              height={80}
+              width={80}
             />
-            <p className="md:text-sm text-[#33297C] lg:text-2xl max-[500px]:text-sm">
+            <p className="md:text-sm sx:text-xs  text-[#33297C] lg:text-2xl max-[500px]:text-sm">
               New
             </p>
-            <p className="text-primary md:text-sm lg:text-2xl max-[500px]:text-sm">
+            <p className="text-primary sx:text-xs md:text-sm lg:text-2xl max-[500px]:text-sm">
               Eco
             </p>
-            <p className="ms-2 md:text-sm max-[500px]:text-sm lg:text-2xl">
+            <p className="ms-2 md:text-sm sx:text-xs max-[500px]:text-sm lg:text-2xl">
               CLEANING SERVICES
             </p>
           </div>
@@ -146,7 +148,7 @@ const Navber = () => {
 
       {/* Mobile Sidebar */}
       <ResponsiveMenu open={open} />
-    </>
+    </div>
   );
 };
 

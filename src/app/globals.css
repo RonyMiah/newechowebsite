@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -67,13 +68,26 @@ body {
     --chart-5: 340 75% 55%;
   }
 }
+
+/* For Hero Section  */
 .clip-path-wave {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
+@media (max-width: 380px) {
+  .clip-path-wave {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
+  }
+}
 @media (max-width: 767px) {
   .clip-path-wave {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 9%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
   }
+}
+
+/* For What we do Section  */
+
+.clip-path-wave2 {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 
