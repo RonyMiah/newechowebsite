@@ -11,17 +11,13 @@ const NavberMenue = [
   {
     id: 1,
     title: "About Us",
-    link: "/about",
+    link: "/about-us",
   },
+
   {
     id: 2,
     title: "Services",
     link: "/services",
-  },
-  {
-    id: 3,
-    title: "Projects",
-    link: "/projects",
     children: [
       {
         name: "Interior Maintenance",
@@ -34,11 +30,26 @@ const NavberMenue = [
         link: "/exterior-maintenance",
       },
       {
-        name: "Mobile Services",
+        name: "Special Services",
         id: "03",
-        link: "/mobile-services",
+        link: "/special-services",
+      },
+      {
+        name: "Initial Cleaning Services",
+        id: "04",
+        link: "/initial-cleaning-services",
+      },
+      {
+        name: "Mobile Team",
+        id: "05",
+        link: "/mobail-team",
       },
     ],
+  },
+  {
+    id: 3,
+    title: "Projects",
+    link: "/projects",
   },
   {
     id: 4,
@@ -126,7 +137,7 @@ const Navber = () => {
                         {item.children.map((subItem) => (
                           <li
                             key={subItem.id}
-                            className="px-4 mt-1 py-2 hover:bg-[#33297C] hover:text-white hover:rounded-md "
+                            className="px-4 w-40 mt-1 py-2 hover:bg-[#33297C] hover:text-white "
                           >
                             <Link href={subItem.link}>{subItem.name}</Link>
                           </li>

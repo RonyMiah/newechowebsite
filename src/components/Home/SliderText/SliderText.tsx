@@ -98,7 +98,7 @@ const SliderText = () => {
           Count on us to exceed your cleaning needs for offices, homes and
           facilities. We understand how cleanliness impacts productivity and
           well-being. Our goal isn’t just to clean, but to build{" "}
-          <span className="text-[#33297C] text-lg"> lasting trust </span> by
+          <span className="text-[#33297C] text-lg font-bold"> lasting trust </span> by
           going above and beyond every time.
         </p>
       </div>

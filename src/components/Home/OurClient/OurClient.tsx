@@ -42,12 +42,16 @@ const OurClient = () => {
         {logos.map((logo, index) => (
           <div
             key={index}
-            className="sx:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/4  p-4  flex justify-center items-center"
+            className="sx:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/4  p-4  flex justify-center items-center "
           >
             <Image
               src={logo}
               alt={`Logo ${index + 1}`}
-              className= {`${logo === logo8 ? 'w-[100px] h-[100px]' : 'w-[300px] h-[90px]' }`}
+              className={`${
+                logo === logo8
+                  ? "w-[100px] h-[100px] hover:scale-110 transform transition-transform duration-400"
+                  : "w-[300px] h-[90px] hover:scale-110 transform transition-transform duration-400 "
+              }`}
               width={300}
               height={100}
             />

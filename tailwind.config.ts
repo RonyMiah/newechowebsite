@@ -11,8 +11,8 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
-			primary:"#ff8901",
-			secoundary:"#fb923c",
+  			primary: '#ff8901',
+  			secoundary: '#fb923c',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -23,10 +23,6 @@ const config: Config = {
   				DEFAULT: 'hsl(var(--popover))',
   				foreground: 'hsl(var(--popover-foreground))'
   			},
-  			// primary: {
-  			// 	DEFAULT: 'hsl(var(--primary))',
-  			// 	foreground: 'hsl(var(--primary-foreground))'
-  			// },
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',
   				foreground: 'hsl(var(--secondary-foreground))'
@@ -54,27 +50,45 @@ const config: Config = {
   				'5': 'hsl(var(--chart-5))'
   			}
   		},
-		 zIndex: {
-        '60': '60',
-        '100': '100',
-        'auto': 'auto',
-      },
-		
-		container: {
-              center:true,
-			  padding: {
-			
-			
-			  }
-		},
+  		zIndex: {
+  			'60': '60',
+  			'100': '100',
+  			auto: 'auto'
+  		},
+  		container: {
+  			center: 'true',
+  			padding: {}
+  		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
-		screens: {
-        'sx': '310px', // Custom size for screens of 550px or larger
-      },
+  		screens: {
+  			sx: '310px'
+  		},
+  		keyframes: {
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
+  				}
+  			}
+  		},
+  		animation: {
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out'
+  		}
   	}
   },
   plugins: [require("tailwindcss-animate")],
