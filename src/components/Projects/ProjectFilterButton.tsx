@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { FaQrcode } from 'react-icons/fa';
 import ProjectCard from './ProjectCard';
+import Link from 'next/link';
 
 //Project Data Json File 
 const data = [
@@ -141,8 +142,13 @@ const ProjectFilterButton = () => {
     <>
       {/* Red Button */}
       <div className="flex justify-end container px-4 md:px-28">
-        <button
-          className={`
+        <Link
+          href="https://drive.google.com/file/d/1ORlxjw4H7_kJZ7Id2HqaciCWcV1k2N-N/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button
+            className={`
             bg-red-500 flex justify-center items-center gap-1
             hover:bg-[#33297C] hover:scale-105
             text-white font-semibold py-2 px-3 md:px-4 text-sm md:text-base
@@ -150,14 +156,15 @@ const ProjectFilterButton = () => {
             focus:outline-none focus:ring-2 focus:ring-[#33297C]
             w-full md:w-auto 
           `}
-          // onClick={() => handleClick("profile")}
-        >
-          <FaQrcode />
-          <span className="hidden sm:inline">
-            View Our Company Profile To Explore All Of Our Projects
-          </span>
-          <span className="sm:hidden">Explore Projects</span>
-        </button>
+            // onClick={() => handleClick("profile")}
+          >
+            <FaQrcode />
+            <span className="hidden sm:inline">
+              View Our Company Profile To Explore All Of Our Projects
+            </span>
+            <span className="sm:hidden">Explore Projects</span>
+          </button>
+        </Link>
       </div>
 
       {/* Filter Buttons */}

@@ -40,7 +40,7 @@ const OurClient = () => {
               src={logo}
               alt={`Logo ${index + 1}`}
               className={`${
-                "w-[350px] h-[180px] hover:scale-110 transform transition-transform duration-400 rounded-2xl "
+                "w-[350px] h-[160px] hover:scale-110 transform transition-transform duration-400 rounded-2xl "
               }`}
               width={300}
               height={100}

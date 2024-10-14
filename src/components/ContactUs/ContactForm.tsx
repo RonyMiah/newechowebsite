@@ -5,6 +5,7 @@ import emailjs from "emailjs-com";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { CgWebsite } from "react-icons/cg";
 import { IoMdPhonePortrait } from "react-icons/io";
+import Link from "next/link";
 
 
 const ContactForm = () => {
@@ -206,17 +207,23 @@ const ContactForm = () => {
 
           {/* Company Profile Button */}
           <div className="flex justify-start mt-6">
-            <button
-              className={`
+            <Link
+              href="https://drive.google.com/file/d/1ORlxjw4H7_kJZ7Id2HqaciCWcV1k2N-N/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button
+                className={`
                 bg-red-500 flex justify-center items-center gap-1
                 hover:bg-[#33297C] hover:scale-105
                 text-white font-semibold py-2 px-4 text-base
                 rounded-full shadow-md transition-transform duration-300 ease-in-out
                 focus:outline-none focus:ring-2 focus:ring-[#33297C]
               `}
-            >
-              Get Our Company Profile
-            </button>
+              >
+                Get Our Company Profile
+              </button>
+            </Link>
           </div>
         </div>
       </div>

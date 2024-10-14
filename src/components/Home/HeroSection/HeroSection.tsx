@@ -55,25 +55,24 @@ const HeroSection = () => {
             </h1>
 
             <div className="flex md:justify-start lg:justify-start sm:justify-center sx:justify-center items-center gap-8 mt-8">
-              <Button
-                onClick={() =>
-                  window.open(
-                    "../../../assets//pdf/profile_new_eco.pdf",
-                    "_blank"
-                  )
-                }
-                className={`rounded-full transition-all duration-300  ${
-                  hovered
-                    ? "!bg-[#33297C] !text-white"
-                    : "bg-transparent border border-white text-white"
-                }`}
-                variant="outline"
-                onMouseEnter={() => setHovered(true)}
-                onMouseLeave={() => setHovered(false)}
+              <Link
+                href="https://drive.google.com/file/d/1ORlxjw4H7_kJZ7Id2HqaciCWcV1k2N-N/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                {hovered ? "Our Company Profile" : "Learn More"}
-              </Button>
-
+                <Button
+                  className={`rounded-full transition-all duration-300  ${
+                    hovered
+                      ? "!bg-[#33297C] !text-white"
+                      : "bg-transparent border border-white text-white"
+                  }`}
+                  variant="outline"
+                  onMouseEnter={() => setHovered(true)}
+                  onMouseLeave={() => setHovered(false)}
+                >
+                  {hovered ? "Our Company Profile" : "Learn More"}
+                </Button>
+              </Link>
               <Link href="/contact-us">
                 <Button className="bg-[#33297C] rounded-full">
                   {" "}
