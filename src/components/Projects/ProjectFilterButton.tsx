@@ -270,7 +270,7 @@ const ProjectFilterButton = () => {
               {/* Left Arrow */}
               <button
                 onClick={prevProject}
-                className="absolute left-[-40px] sm:left-[-60px] top-1/2 transform -translate-y-1/2 text-lg font-bold px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded-full focus:outline-none z-10"
+                className="absolute left-[-40px] sm:left-[-60px] sx:left-[-20px] top-1/2 transform -translate-y-1/2 text-lg font-bold px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded-full focus:outline-none z-10"
               >
                 &lt;
               </button>
@@ -279,7 +279,9 @@ const ProjectFilterButton = () => {
               <Image
                 src={filteredData[selectedProjectIndex].image}
                 alt={filteredData[selectedProjectIndex].title}
-                className="w-full h-auto rounded-lg mb-4 max-w-[80%] sm:max-w-[90%]"
+                className="w-full h-auto rounded-lg mb-4 max-w-[80%] sm:max-w-[90%] sx:max-w-[90%]"
+                width={500}
+                height={500}
               />
               {/* Project Details */}
               <div className="text-start text-white absolute bottom-4 bg-black bg-opacity-80 w-full max-w-[90%] p-3">
@@ -291,7 +293,7 @@ const ProjectFilterButton = () => {
               {/* Right Arrow */}
               <button
                 onClick={nextProject}
-                className="absolute right-[-40px] sm:right-[-60px] top-1/2 transform -translate-y-1/2 text-lg font-bold px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded-full focus:outline-none z-10"
+                className="absolute right-[-40px] sm:right-[-60px] sx:right-[-20px] top-1/2 transform -translate-y-1/2 text-lg font-bold px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded-full focus:outline-none z-10"
               >
                 &gt;
               </button>

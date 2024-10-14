@@ -13,7 +13,7 @@ const ProjectCard = ({ project, onClick }: any) => {
           alt={project?.title}
           className="w-full h-72 object-cover rounded-md"
           width={500}
-          height={600}
+          height={500}
         />
         {/* Overlay Title */}
         <div className="absolute bottom-2 w-full text-center -mb-2 bg-[#33297C] bg-opacity-75 rounded-b-md py-2">
