@@ -18,27 +18,32 @@ const AboutCleaning = () => {
 
       {/* text Section  */}
       <div className="lg:w-[50%] bg-[#F2F5F7] rounded-lg p-8 mx-auto">
-        <h1 className="text-4xl font-bold mb-4">About AU Cleaning Services</h1>
+        <h1 className="text-3xl font-bold mb-4">
+          About NEW ECO Cleaning Services
+        </h1>
         <p>
-          AU Cleaning Services Sdn. Bhd. (AUCS), previously recognized as Awana
-          Unggul Sdn. Bhd., commenced its operations in 2005 with a primary
-          focus on delivering exceptional cleaning and gardening maintenance
-          services in the Klang Valley. It was rebranded as AUCS in 2013,
-          expanding its services to include residential, commercial and
-          mixed-use developments such as offices and retail outlets.
+          New Eco Resources BM Sdn. Bhd. (NEW ECO) was incorporated in Year 2023
+          providing cleaning, maintenance services, Import Export Services and
+          Manpower supply businesses mainly in Kuala Lumpur Area, Malaysia.
         </p>
         <p className="my-4">
-          With a focus on honesty, trustworthiness, and professionalism, we set
-          new industry standards. Backed by a large, well-trained staff, we
-          ensure consistent, high-quality service delivery.
+          NEW ECO was launched with an aim to be honest, trustworthy, trained
+          and knowledgeable company that provides high quality cleaning and
+          janitorial services in commercial and residential building that are
+          dependable and professional in Peninsula Malaysia.
         </p>
         <p className="mb-4">
-          Recognizing the importance of a clean work environment, we offer a
-          comprehensive range of services tailored to meet diverse needs
-          effectively and efficiently
+          NEW ECO is setting new standards in cleaning services and is
+          maintaining these standards through hard work and professionalism to
+          create and strengthen our relationships with our customers. NEW ECO
+          has one of the largest full-time staffs in the region and all are
+          regularly and fully trained to meet high standards of quality and
+          cleaning performance, as well as specialty services certiﬁcation. We
+          are ready to fulﬁll your ofﬁce and facilities cleaning needs.
         </p>
         <h4 className="text-xl font-bold text-red-600">
-          In AUCS, we clean for a living because cleaning is what we do best!
+          At New Eco, cleaning is our passion, and excellence is our standard.
+          It’s more than just a job – it’s what we do best!
         </h4>
       </div>
     </div>

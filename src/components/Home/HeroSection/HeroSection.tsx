@@ -14,6 +14,7 @@ import clean3 from "@/assets/clean3.jpg";
 import Image from "next/image";
 import AnimationIcon from "../../../assets/lottieicon.json";
 import Lottie from "lottie-react";
+import Link from "next/link";
 
 const HeroSection = () => {
   const [hovered, setHovered] = useState(false);
@@ -43,20 +44,27 @@ const HeroSection = () => {
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-4xl font-bold ">
               <p className="md:text-start lg:text-start">
-                Your Partner for Professional
+                Your Trusted Partner for Expert
               </p>
               <p className="md:text-start lg:text-start">
                 {" "}
-                <span className="text-[#33297C]"> Cleaning</span> Maintenance
+                <span className="text-[#33297C]"> Cleaning</span> and
+                Maintenance
               </p>
-              <p className="md:text-start lg:text-start">Services</p>
+              <p className="md:text-start lg:text-start">Solutions</p>
             </h1>
 
             <div className="flex md:justify-start lg:justify-start sm:justify-center sx:justify-center items-center gap-8 mt-8">
               <Button
+                onClick={() =>
+                  window.open(
+                    "../../../assets//pdf/profile_new_eco.pdf",
+                    "_blank"
+                  )
+                }
                 className={`rounded-full transition-all duration-300  ${
                   hovered
-                    ? "bg-red-900 text-white"
+                    ? "!bg-[#33297C] !text-white"
                     : "bg-transparent border border-white text-white"
                 }`}
                 variant="outline"
@@ -66,10 +74,12 @@ const HeroSection = () => {
                 {hovered ? "Our Company Profile" : "Learn More"}
               </Button>
 
-              <Button className="bg-[#33297C] rounded-full">
-                {" "}
-                Get In Touch{" "}
-              </Button>
+              <Link href="/contact-us">
+                <Button className="bg-[#33297C] rounded-full">
+                  {" "}
+                  Get In Touch{" "}
+                </Button>
+              </Link>
             </div>
             <div className="w-40 flex justify-center items-center ms-16">
               <Lottie animationData={AnimationIcon} loop={true} />

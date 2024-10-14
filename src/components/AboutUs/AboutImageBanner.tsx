@@ -11,13 +11,14 @@ const AboutImageBanner = () => {
         }}
       >
         {/* Background overlay (optional, to darken the background) */}
-        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-80"></div>
 
         {/* Centered text */}
         <div className="relative flex justify-center items-center h-full">
           <h1 className="text-white text-2xl md:text-2xl lg:text-4xl font-bold text-center px-4 w-[1300px]">
-            “To Be The Best Leader In Cleaning Services Industry Towards Total
-            Quality Excellence”
+            “Striving to be the most trusted and innovative leader in the
+            cleaning services industry, delivering unparalleled quality and
+            excellence.”
           </h1>
         </div>
       </div>

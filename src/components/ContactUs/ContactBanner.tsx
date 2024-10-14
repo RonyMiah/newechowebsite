@@ -1,19 +1,19 @@
-import React from "react";
+import React from 'react'
 
-const AboutBanner = () => {
+const ContactBanner = () => {
   return (
     <>
-      <div className=" bg-gradient-to-b from-[#E63710] to-[#ee6749]  lg:h-[300px] md:h-[300px] sm:h-[300px] sx:h-[380px] mt-20  text-center">
+      <div className=" bg-gradient-to-b from-[#E63710] to-[#ee6749]  lg:h-[320px] md:h-[350px] sm:h-[320px] sx:h-[350px] mt-20  text-center">
         <h2 className=" text-[#32297C] text-4xl text-center pt-16 font-bold ">
-          About Us
+          Contact
         </h2>
-        <h3 className="py-2 px-2 rounded-full bg-[#32297C] text-white my-4 lg:text-2xl md:text-2xl sm:text-2xl font-bold lg:w-[450px] md:w-[450px] sm:w-[450px] sx:w-[320px] sx:text-base mx-auto ">
-          Your Satisfaction, Our Purpose
+        <h3 className="py-2 px-4 rounded-full bg-[#32297C] text-white my-4 lg:text-2xl md:text-2xl sm:text-2xl font-bold lg:w-[480px] md:w-[480px] sm:w-[480px] sx:w-[320px] sx:text-base mx-auto ">
+          Have Questions? We've Got Answers
         </h3>
         <p className="text-white lg:w-[620px] md:w-[620px] sm:w-[520px] sx:w-[320px] mx-auto text-lg">
-          NewEco delivers exceptional cleaning services for both homes and
-          businesses. Rely on us to maintain a spotless, welcoming environment.
-          Your satisfaction is at the heart of everything we do!
+          We’re here to help you achieve a healthier space. Whether you have
+          questions about our services, need a quote or want to schedule a
+          cleaning, our team is ready to assist you.
         </p>
       </div>
       <svg
@@ -38,6 +38,6 @@ const AboutBanner = () => {
       </svg>
     </>
   );
-};
+}
 
-export default AboutBanner;
+export default ContactBanner

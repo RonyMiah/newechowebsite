@@ -1,3 +1,4 @@
+import BackToTopButton from '@/components/BackToTopButton/BackToTopButton'
 import Footer from '@/components/Home/Footer/Footer'
 import Navber from '@/components/Home/navigation/Navber'
 import ServiceBanner from '@/components/Services/ServiceBanner/ServiceBanner'
@@ -12,6 +13,7 @@ const page = () => {
       <ServiceBanner />
       <ServiceCard />
       <ServiceSlideText />
+      <BackToTopButton />
       <Footer />
     </div>
   );

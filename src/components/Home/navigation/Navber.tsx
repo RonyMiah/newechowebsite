@@ -20,29 +20,54 @@ const NavberMenue = [
     link: "/services",
     children: [
       {
-        name: "Interior Maintenance",
-        id: "01",
-        link: "/interior-maintenance",
+        name: "Commercial Cleaning",
+        id: 1,
+        link: "/services/#01",
       },
       {
-        name: "Exterior Maintenance",
-        id: "02",
-        link: "/exterior-maintenance",
+        name: "Office Cleaning",
+        id: 2,
+        link: "/services/#02",
       },
       {
-        name: "Special Services",
-        id: "03",
-        link: "/special-services",
+        name: "Window Cleaning",
+        id: 3,
+        link: "/services/#03",
       },
       {
-        name: "Initial Cleaning Services",
-        id: "04",
-        link: "/initial-cleaning-services",
+        name: "Carpet Cleaning",
+        id: 4,
+        link: "/services/#04",
       },
       {
-        name: "Mobile Team",
-        id: "05",
-        link: "/mobail-team",
+        name: "Janitorial Cleaning ",
+        id: 5,
+        link: "/services/#05",
+      },
+      {
+        name: "Washroom Cleaning ",
+        id: 6,
+        link: "/services/#06",
+      },
+      {
+        name: "Property Maintenance ",
+        id: 7,
+        link: "/services/#07",
+      },
+      {
+        name: "Hard Floor Maintenance ",
+        id: 8,
+        link: "/services/#08",
+      },
+      {
+        name: "Grass Cutting ",
+        id: 9,
+        link: "/services/#09",
+      },
+      {
+        name: "Tree & Garden Maintenance",
+        id: 10,
+        link: "/services/#010",
       },
     ],
   },
@@ -54,7 +79,7 @@ const NavberMenue = [
   {
     id: 4,
     title: "Contact",
-    link: "/contact",
+    link: "/contact-us",
   },
 ];
 
@@ -73,28 +98,28 @@ const Navber = () => {
   return (
     <div className="fixed top-0 left-0  bg-white shadow-md z-50 w-full ">
       <nav>
-        <div
-          className="lg:container md:container  flex justify-between items-center  "
-        >
+        <div className="lg:container md:container  flex justify-between items-center  ">
           {/* Logo Section */}
-          <div className="text-2xl flex items-center justify-center font-bold uppercase">
-            <Image
-              className="flex justify-center items-center"
-              src={logo}
-              alt="logo"
-              height={80}
-              width={80}
-            />
-            <p className="md:text-sm sx:text-xs  text-[#33297C] lg:text-2xl max-[500px]:text-sm">
-              New
-            </p>
-            <p className="text-primary sx:text-xs md:text-sm lg:text-2xl max-[500px]:text-sm">
-              Eco
-            </p>
-            <p className="ms-2 md:text-sm sx:text-xs max-[500px]:text-sm lg:text-2xl">
-              CLEANING SERVICES
-            </p>
-          </div>
+          <Link href='/'>
+            <div className="text-2xl flex items-center justify-center font-bold uppercase">
+              <Image
+                className="flex justify-center items-center"
+                src={logo}
+                alt="logo"
+                height={80}
+                width={80}
+              />
+              <p className="md:text-sm sx:text-xs  text-[#33297C] lg:text-2xl max-[500px]:text-sm">
+                New
+              </p>
+              <p className="text-primary sx:text-xs md:text-sm lg:text-2xl max-[500px]:text-sm">
+                Eco
+              </p>
+              <p className="ms-2 md:text-sm sx:text-xs max-[500px]:text-sm lg:text-2xl">
+                CLEANING SERVICES
+              </p>
+            </div>
+          </Link>
 
           {/* Menu Section */}
           <div className="hidden md:block">
@@ -137,7 +162,7 @@ const Navber = () => {
                         {item.children.map((subItem) => (
                           <li
                             key={subItem.id}
-                            className="px-4 w-40 mt-1 py-2 hover:bg-[#33297C] hover:text-white "
+                            className="px-4 w-[200px] mt-1 py-2 hover:bg-[#33297C] hover:text-white "
                           >
                             <Link href={subItem.link}>{subItem.name}</Link>
                           </li>

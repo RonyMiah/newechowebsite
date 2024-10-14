@@ -1,18 +1,14 @@
 import React from 'react'
 import Image from "next/image";
 
-import logo1 from '../../../assets/company/GSC-Cinema-Vector-Logo-removebg-preview.jpg'
-import logo2 from '../../../assets/company/HBMK-logo-removebg-preview.jpg'
-import logo3 from '../../../assets/company/M-TRUSTEE-BERHARD-LOGO-3-1.png'
-import logo4 from '../../../assets/company/Pavilion_Bukit_Jalil_Mall_Logo.jpg'
-import logo5 from '../../../assets/company/Transpacc-logo-new-1024x166-2.png'
-import logo6 from '../../../assets/company/burgess-rawson.png'
-import logo7 from '../../../assets/company/dumc.png'
-import logo8 from '../../../assets/company/logo-1-1.png'
-import logo9 from '../../../assets/company/lv.png'
-import logo10 from '../../../assets/company/mah-sing.png'
-import logo11 from '../../../assets/company/malton.png'
-import logo12 from '../../../assets/company/pv.png'
+import logo1 from '@/assets/company/p-1.jpeg'
+import logo2 from "@/assets/company/p-2.jpeg";
+import logo3 from "@/assets/company/p-3.jpeg";
+import logo4 from "@/assets/company/p-4.jpeg";
+import logo5 from "@/assets/company/p-5.jpeg";
+import logo6 from "@/assets/company/p-6.jpg";
+import logo7 from "@/assets/company/p-7.jpg";
+
 
 const OurClient = () => {
 
@@ -23,12 +19,8 @@ const OurClient = () => {
     logo4,
     logo5,
     logo6,
-    logo7,
-    logo8,
-    logo9,
-    logo10,
-    logo11,
-    logo12
+    logo7
+ 
   ];
 
 
@@ -48,9 +40,7 @@ const OurClient = () => {
               src={logo}
               alt={`Logo ${index + 1}`}
               className={`${
-                logo === logo8
-                  ? "w-[100px] h-[100px] hover:scale-110 transform transition-transform duration-400"
-                  : "w-[300px] h-[90px] hover:scale-110 transform transition-transform duration-400 "
+                "w-[350px] h-[180px] hover:scale-110 transform transition-transform duration-400 rounded-2xl "
               }`}
               width={300}
               height={100}
