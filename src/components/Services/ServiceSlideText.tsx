@@ -9,12 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+
 import { FaArrowUp } from "react-icons/fa";
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
 
@@ -382,11 +377,12 @@ const ServiceSlideText = () => {
                 professional advice on the best method of cleaning your windows.
               </span>
               It may be that your building requires safety eye- bolt ﬁttings or
-              that the roof could lend itself to a boatswain's chair. Whatever
-              the circumstances we will be looking to ﬁnd you the most suitable,
-              safe and cost effective method. At the end of each clean our
+              that the roof could lend itself to a boatswain&apos;s chair.
+              Whatever the circumstances we will be looking to ﬁnd you the most
+              suitable, safe and cost effective method. At the end of each clean
+              our
               <span className="text-[#32297C] font-bold mx-2">
-                Supervisor will present you with a satisfaction note' for
+                Supervisor will present you with a satisfaction note&apos; for
                 signature.
               </span>
               This system allows you to check that the work has been completed
@@ -634,10 +630,10 @@ const ServiceSlideText = () => {
               WASHROOM CLEANING SERVICES
             </h1>
             <p className="text-base">
-              If you've got a
+              If you &apos; ve got a
               <span className="text-[#32297C] font-bold mx-2">
                 multistorey building with a number of cubicles, or unmanned
-                toilets that you can't check personally,
+                toilets that you can &apos; t check personally,
               </span>
               how do you know that every item has been serviced as you would
               wish? With us, you can be completely conﬁdent, because our
@@ -855,8 +851,8 @@ const ServiceSlideText = () => {
                 team grind your marble, limestone, granite and other natural
                 stone ﬂoors to remove scratches and etches.
               </span>
-              We'll seal the surface to restore its original lustre and to
-              withstand penetration of liquid spills and dirt. Vinyl and
+              We &apos; ll seal the surface to restore its original lustre and
+              to withstand penetration of liquid spills and dirt. Vinyl and
               Linoleum Floor Without proper maintenance, vinyl and linoleum
               ﬂoors lose their sheen. These types of ﬂoors can develop an
               unsightly yellow discoloration. This soiled ﬁlm together with deep

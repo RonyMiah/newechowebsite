@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 import { Card, CardContent } from "../ui/card";
 import Image from "next/image";
@@ -12,12 +12,10 @@ import clean4 from "@/assets/about-4.jpg";
 import clean5 from "@/assets/about-5.jpeg"
 import clean6 from "@/assets/about-6.jpg";
 
-import { FaCheckDouble } from "react-icons/fa";
-import Marquee from "react-marquee-slider";
-import times from "lodash/times";
+
 
 const AboutCard = () => {
-  const [hovered, setHovered] = useState(false);
+ 
 
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })

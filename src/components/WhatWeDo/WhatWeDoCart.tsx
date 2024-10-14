@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import React from "react";
-import { FaHandsWash, FaHome } from "react-icons/fa";
+import { FaHandsWash } from "react-icons/fa";
 import { GiSkills } from "react-icons/gi";
 import { MdCleanHands } from "react-icons/md";
 import { SiCcleaner } from "react-icons/si";

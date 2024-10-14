@@ -100,7 +100,7 @@ const Navber = () => {
       <nav>
         <div className="lg:container md:container  flex justify-between items-center  ">
           {/* Logo Section */}
-          <Link href='/'>
+          <Link href="/">
             <div className="text-2xl flex items-center justify-center font-bold uppercase">
               <Image
                 className="flex justify-center items-center"
@@ -183,7 +183,7 @@ const Navber = () => {
       </nav>
 
       {/* Mobile Sidebar */}
-      <ResponsiveMenu open={open} />
+      <ResponsiveMenu open={open} closeMenu={() => setOpen(false)} />
     </div>
   );
 };

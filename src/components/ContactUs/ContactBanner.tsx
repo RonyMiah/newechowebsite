@@ -8,11 +8,11 @@ const ContactBanner = () => {
           Contact
         </h2>
         <h3 className="py-2 px-4 rounded-full bg-[#32297C] text-white my-4 lg:text-2xl md:text-2xl sm:text-2xl font-bold lg:w-[480px] md:w-[480px] sm:w-[480px] sx:w-[320px] sx:text-base mx-auto ">
-          Have Questions? We've Got Answers
+          Have Questions? We &apos; ve Got Answers
         </h3>
         <p className="text-white lg:w-[620px] md:w-[620px] sm:w-[520px] sx:w-[320px] mx-auto text-lg">
-          We’re here to help you achieve a healthier space. Whether you have
-          questions about our services, need a quote or want to schedule a
+          We &apos; re here to help you achieve a healthier space. Whether you
+          have questions about our services, need a quote or want to schedule a
           cleaning, our team is ready to assist you.
         </p>
       </div>

@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { FaQrcode } from 'react-icons/fa';
 import ProjectCard from './ProjectCard';
 import Link from 'next/link';
+import Image from 'next/image';
 
 //Project Data Json File 
 const data = [
@@ -275,7 +276,7 @@ const ProjectFilterButton = () => {
               </button>
 
               {/* Project Image */}
-              <img
+              <Image
                 src={filteredData[selectedProjectIndex].image}
                 alt={filteredData[selectedProjectIndex].title}
                 className="w-full h-auto rounded-lg mb-4 max-w-[80%] sm:max-w-[90%]"

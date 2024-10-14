@@ -18,7 +18,7 @@ const ContactForm = () => {
 
   const form: any = useRef(null); // Use a reference for the form element
 
-  const onSubmit = (data: any) => {
+  const onSubmit = () => {
     // Send the form using the form reference
     emailjs
       .sendForm(

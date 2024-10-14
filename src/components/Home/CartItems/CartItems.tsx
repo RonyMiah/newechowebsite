@@ -14,8 +14,8 @@ const CartItems = () => {
         <div>
           <h3 className="text-xl font-bold">We Listen</h3>
           <p className="my-2">
-            AUCS prioritize listening to our clients' cleaning needs to deliver
-            tailored solutions.
+            AUCS prioritize listening to our clients &apos; cleaning needs to
+            deliver tailored solutions.
           </p>
         </div>
       </div>
